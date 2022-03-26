@@ -47,6 +47,22 @@
       "Role": "senior software Developer",
       "Salary": "45000",
       "id": 6
+    },
+    {
+      "Name": "Anjali",
+      "Gender": "Female",
+      "Dept": "Marketing",
+      "Role": "Manager",
+      "Salary": "8000",
+      "id": 7
+    },
+    {
+      "Name": "Anmol",
+      "Gender": "Female",
+      "Dept": "HR",
+      "Role": "recruiter",
+      "Salary": "88888",
+      "id": 8
     }
   ]
 }

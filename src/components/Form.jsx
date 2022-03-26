@@ -44,6 +44,11 @@ const Form = () => {
         getData();
       })
       .catch((err) => console.log(err));
+    setName("");
+    setGender("");
+    SetDept("");
+    setRole("");
+    setSalary("");
   };
   // ****************************************************************
   const showAll = () => setDisData(data);
@@ -82,39 +87,41 @@ const Form = () => {
     setDisData([...newData]);
   };
   return (
-    <div>
+    <div className="APP">
       <h1>Enter Employee Details</h1>
-      <input
-        placeholder="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <br />
-      <input
-        placeholder="gender"
-        value={gender}
-        onChange={(e) => setGender(e.target.value)}
-      />
-      <br />
-      <input
-        placeholder="departement"
-        value={dept}
-        onChange={(e) => SetDept(e.target.value)}
-      />
-      <br />
-      <input
-        placeholder="role"
-        value={role}
-        onChange={(e) => setRole(e.target.value)}
-      />
-      <br />
-      <input
-        placeholder="Salary"
-        value={salary}
-        onChange={(e) => setSalary(e.target.value)}
-      />
-      <br />
-      <button onClick={handleAdd}>ADD EMPLOYEE</button>
+      <div className="inputBox">
+        <input
+          placeholder="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <br />
+        <input
+          placeholder="gender"
+          value={gender}
+          onChange={(e) => setGender(e.target.value)}
+        />
+        <br />
+        <input
+          placeholder="departement"
+          value={dept}
+          onChange={(e) => SetDept(e.target.value)}
+        />
+        <br />
+        <input
+          placeholder="role"
+          value={role}
+          onChange={(e) => setRole(e.target.value)}
+        />
+        <br />
+        <input
+          placeholder="Salary"
+          value={salary}
+          onChange={(e) => setSalary(e.target.value)}
+        />
+        <br />
+        <button onClick={handleAdd}>ADD EMPLOYEE</button>
+      </div>
       <br />
       <br />
       <button onClick={showAll}>Show All Departments</button>
@@ -127,20 +134,19 @@ const Form = () => {
       <br />
       <button onClick={AscendingSort}>Sort By salary Ascending</button>
       <button onClick={DescendingSort}>Sort By salary Descending</button>
-      {/* {data.filter((item) =>
-        (count === 1 ? data : setCount(2)).map((item) => <p>{item.name}</p>)
-      )} */}
-      {disData.map((item) => {
-        return (
-          <div className="card" key={item.id}>
-            <p>Name : {item.Name}</p>
-            <p>Gender : {item.Gender}</p>
-            <p>Departement : {item.Dept}</p>
-            <p>Role : {item.Role}</p>
-            <p>Salary : {item.Salary}</p>
-          </div>
-        );
-      })}
+      <div className="Card1">
+        {disData.map((item) => {
+          return (
+            <div className="card" key={item.id}>
+              <p>Name : {item.Name}</p>
+              <p>Gender : {item.Gender}</p>
+              <p>Departement : {item.Dept}</p>
+              <p>Role : {item.Role}</p>
+              <p>Salary : {item.Salary}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

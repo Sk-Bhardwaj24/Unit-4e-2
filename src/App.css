@@ -3,7 +3,8 @@
 }
 .card {
   /* border: 10px solid red; */
-
+  background-color: #fdb813;
+  background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%);
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -17,4 +18,31 @@
   padding: 20px;
   font-weight: 650;
   box-sizing: border-box;
+}
+.inputBox {
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  padding: 40px;
+}
+.inputBox > input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 10px;
+  color: black;
+  font-weight: bold;
+  width: 400px;
+}
+button {
+  height: 40px;
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+}
+.Card1 {
+  background-color: #ee8c68;
+  background-image: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
+  margin-top: 80px;
+  padding: 40px;
 }

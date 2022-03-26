@@ -1,0 +1,52 @@
+{
+  "EmployeeList": [
+    {
+      "Name": "Donall",
+      "Gender": "Female",
+      "Dept": "HR",
+      "Role": "Head",
+      "Salary": "473",
+      "id": 1
+    },
+    {
+      "Name": "Ram",
+      "Gender": "Male",
+      "Dept": "IT",
+      "Role": "full stack",
+      "Salary": "44444444",
+      "id": 2
+    },
+    {
+      "Name": "saurabh",
+      "Gender": "Male",
+      "Dept": "IT",
+      "Role": "Full stack",
+      "Salary": "1111",
+      "id": 3
+    },
+    {
+      "Name": "Wasim",
+      "Gender": "male",
+      "Dept": "Marketing",
+      "Role": "sells",
+      "Salary": "11115",
+      "id": 4
+    },
+    {
+      "Name": "chandan",
+      "Gender": "male",
+      "Dept": "Finance",
+      "Role": "manager",
+      "Salary": "50001",
+      "id": 5
+    },
+    {
+      "Name": "Nihal",
+      "Gender": "Male",
+      "Dept": "IT",
+      "Role": "senior software Developer",
+      "Salary": "45000",
+      "id": 6
+    }
+  ]
+}
